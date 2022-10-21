@@ -17,6 +17,7 @@
 
 body {
 	margin: 0;
+	padding: 0;
 	display: flex;
 	place-items: center;
 	min-width: 320px;
@@ -28,7 +29,7 @@ body {
 	line-height: 1.1;
 } */
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
 	:root {
 		color: #213547;
 		background-color: #ffffff;
@@ -39,4 +40,4 @@ body {
 	button {
 		background-color: #f9f9f9;
 	}
-}
+} */

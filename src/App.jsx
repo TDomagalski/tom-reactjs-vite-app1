@@ -1,10 +1,11 @@
-// import reactLogo from "./assets/react.svg";
+import favicon from "./assets/favicon.svg";
 import "./styles/css/App.css";
 
 function App() {
 	return (
-		<div className="container">
+		<div id="App">
 			<h1>Hello World</h1>
+			<img src={favicon} alt="favicon" />
 		</div>
 	);
 }
