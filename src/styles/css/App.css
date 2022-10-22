@@ -101,6 +101,7 @@ div {
 }
 .App .App_main #App_navigation {
   border-bottom: 1px solid;
+  width: 20%;
 }
 .App .App_main #App_navigation header {
   height: auto;
@@ -177,6 +178,8 @@ div {
           align-items: center;
   text-align: justify;
   padding: 15px;
+  overflow-y: scroll;
+  height: calc(100vh - 111px);
 }
 
 @media (min-width: 720px) {
@@ -192,6 +195,7 @@ div {
             align-items: stretch;
   }
   .App .App_main #App_navigation {
+    width: 20%;
     height: auto;
     border-bottom: none;
     -webkit-box-sizing: border-box;
