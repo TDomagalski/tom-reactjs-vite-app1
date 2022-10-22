@@ -94,7 +94,7 @@ div {
 		// ~~ NAVBAR
 		#App_navigation {
 			border-bottom: 1px solid;
-			width: 20%;
+			width: auto;
 			header {
 				height: auto;
 				display: flex;
@@ -120,13 +120,20 @@ div {
 					width: 100%;
 					ul {
 						list-style-type: none;
+						// font-size: 22px;
+						font-weight: 700;
+						letter-spacing: 1.5px;
 						padding: 0;
 						display: flex;
 						justify-content: space-around;
 						align-items: stretch;
-						font-weight: 700;
-						letter-spacing: 1.5px;
-						font-size: 22px;
+						flex-wrap: wrap;
+
+						li {
+							flex-basis: 25%;
+							box-sizing: border-box;
+							padding: 1rem;
+						}
 					}
 				}
 			}
@@ -140,8 +147,6 @@ div {
 			align-items: center;
 			text-align: justify;
 			padding: 15px;
-			overflow-y: scroll;
-			height: calc(100vh - 111px);
 		}
 	}
 }
@@ -206,6 +211,14 @@ div {
 						flex-basis: 10%;
 					}
 				}
+			}
+
+			#App_content {
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				overflow-y: scroll;
+				height: calc(100vh - 111px);
 			}
 		}
 	}
