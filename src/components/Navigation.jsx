@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../assets/Logo.svg";
 
-export const Navbar = () => {
+export const Navigation = () => {
 	return (
 		<>
 			<header>
