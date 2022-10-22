@@ -22,7 +22,11 @@ function App() {
 			<div className="App" id={theme}>
 				<div className="App_optionbar">
 					<div className="btnTheme" onClick={() => toggleTheme()}>
-						<span>Switch Theme</span>
+						<span>
+							Switch
+							<br />
+							Theme
+						</span>
 					</div>
 				</div>
 				<div className="App_main">
