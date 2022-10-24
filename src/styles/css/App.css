@@ -119,7 +119,7 @@ div {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.App .App_main #App_navigation header .logo {
+.App .App_main #App_navigation header .nav_logo {
   -ms-flex-preferred-size: 15%;
       flex-basis: 15%;
   width: 100%;
@@ -134,7 +134,7 @@ div {
           align-items: center;
   letter-spacing: 2px;
 }
-.App .App_main #App_navigation header .logo img {
+.App .App_main #App_navigation header .nav_logo img {
   margin-right: 10px;
 }
 .App .App_main #App_navigation header nav {
@@ -213,7 +213,7 @@ div {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
-  .App .App_main #App_navigation header .logo {
+  .App .App_main #App_navigation header .nav_logo {
     -ms-flex-preferred-size: 15%;
         flex-basis: 15%;
     width: 100%;
@@ -230,7 +230,7 @@ div {
         flex-wrap: wrap;
     padding: 1rem;
   }
-  .App .App_main #App_navigation header .logo img {
+  .App .App_main #App_navigation header .nav_logo img {
     margin-right: 0;
     width: 75px;
   }

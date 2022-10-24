@@ -5,7 +5,7 @@ export const Navigation = () => {
 	return (
 		<>
 			<header>
-				<div className="logo">
+				<div className="nav_logo">
 					<img src={Logo} alt="TomDom" />
 					<h2>TomDom</h2>
 				</div>
