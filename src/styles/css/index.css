@@ -1,4 +1,13 @@
 :root {
+	--color-bg-default: #f3ebf6;
+	--color-bg-dark: #242424;
+
+	--color-font-default: #f3ebf6;
+	--color-font-dark: #242424;
+
+	--color-border-default: #f3ebf6;
+	--color-border-dark: #242424;
+
 	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;

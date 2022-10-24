@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 #root {
 	min-height: 100vh;
 	margin: 0 auto;
@@ -29,34 +31,35 @@ div {
 
 .App {
 	&#light {
-		background-color: #f3ebf6;
-		color: #242424;
-		border: #242424;
+		background-color: $color-bg-white;
+		color: $color-font-dark;
+		border: $color-border-dark;
 
 		a {
-			color: #242424;
+			color: $color-font-dark;
 		}
 
 		.btnTheme {
-			background-color: #242424;
-			color: #f3ebf6;
+			background-color: $color-bg-dark;
+			color: $color-font-white;
 		}
 	}
 
 	&#dark {
-		background-color: #242424;
-		color: #f3ebf6;
-		border: #f3ebf6;
+		background-color: $color-bg-dark;
+		color: $color-font-white;
+		border: $color-border-white;
 
 		a {
-			color: #f3ebf6;
+			color: $color-font-white;
 		}
 
 		.btnTheme {
-			background-color: #f3ebf6;
-			color: #242424;
+			background-color: $color-bg-white;
+			color: $color-font-dark;
 		}
 	}
+
 	.App_optionbar {
 		box-sizing: border-box;
 		border-bottom: 1px solid;
