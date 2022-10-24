@@ -48,25 +48,31 @@ div {
   background-color: #f3ebf6;
   color: #242424;
   border: #242424;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 .App#light a {
   color: #242424;
 }
-.App#light .btnTheme {
+.App#light .btn_theme {
   background-color: #242424;
-  color: #f3ebf6;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.App#light .btn_theme .btn_theme-circle {
+  background-color: #f3ebf6;
+  left: calc(100% - 35px);
 }
 .App#dark {
   background-color: #242424;
   color: #f3ebf6;
   border: #f3ebf6;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 .App#dark a {
   color: #f3ebf6;
-}
-.App#dark .btnTheme {
-  background-color: #f3ebf6;
-  color: #242424;
 }
 .App .App_optionbar {
   -webkit-box-sizing: border-box;
@@ -78,17 +84,35 @@ div {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.App .App_optionbar .btnTheme {
-  padding: 10px;
+.App .App_optionbar .btn_theme {
+  width: 80px;
+  height: 40px;
   margin: 20px;
-  border: 1px solid;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  border: none;
+  background-color: #f3ebf6;
+  border-radius: 50px;
+  padding: 5px 10px;
+  position: relative;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   cursor: pointer;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 1.5px;
+}
+.App .App_optionbar .btn_theme .btn_theme-circle {
+  width: 25px;
+  height: 25px;
+  background-color: #242424;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: calc(0% + 10px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 .App .App_main {
   -webkit-box-flex: 1;

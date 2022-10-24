@@ -9,12 +9,10 @@ export const ThemeContext = createContext(null);
 function App() {
 	// create useState hook to change light <-> dark
 	const [theme, setTheme] = useState("dark");
-	const [logoTheme, setLogoTheme] = useState("none");
 
 	const toggleTheme = () => {
 		// function setTheme dark <-> light from useState hook
 		setTheme((curr) => (curr === "light" ? "dark" : "light"));
-		setLogoTheme((curr) => (curr === "none" ? "invert" : "none"));
 	};
 
 	return (
@@ -23,13 +21,16 @@ function App() {
 			{/* in id prop inject theme variable */}
 			<div className="App" id={theme}>
 				<div className="App_optionbar">
-					<div className="btnTheme" onClick={() => toggleTheme()}>
+					<button className="btn_theme" onClick={() => toggleTheme()}>
+						<div className="btn_theme-circle"></div>
+					</button>
+					{/* <div className="btnTheme" onClick={() => toggleTheme()}>
 						<span>
 							Switch
 							<br />
 							Theme
 						</span>
-					</div>
+					</div> */}
 				</div>
 				<div className="App_main">
 					<div id="App_navigation">

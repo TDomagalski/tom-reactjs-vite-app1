@@ -34,14 +34,20 @@ div {
 		background-color: $color-bg-white;
 		color: $color-font-dark;
 		border: $color-border-dark;
+		transition: 0.25s;
 
 		a {
 			color: $color-font-dark;
 		}
 
-		.btnTheme {
+		.btn_theme {
 			background-color: $color-bg-dark;
-			color: $color-font-white;
+
+			justify-content: flex-end;
+			.btn_theme-circle {
+				background-color: $color-bg-white;
+				left: calc(100% - (25px + 10px));
+			}
 		}
 	}
 
@@ -49,15 +55,23 @@ div {
 		background-color: $color-bg-dark;
 		color: $color-font-white;
 		border: $color-border-white;
+		transition: 0.25s;
 
 		a {
 			color: $color-font-white;
 		}
 
-		.btnTheme {
-			background-color: $color-bg-white;
-			color: $color-font-dark;
-		}
+		// .btnTheme {
+		// 	background-color: $color-bg-white;
+		// 	color: $color-font-dark;
+		// }
+
+		// .btn_theme {
+		// 	background-color: $color-bg-white;
+		// 	.btn_theme-circle {
+		// 		background-color: $color-bg-dark;
+		// 	}
+		// }
 	}
 
 	.App_optionbar {
@@ -65,16 +79,31 @@ div {
 		border-bottom: 1px solid;
 		display: flex;
 		justify-content: flex-end;
+		align-items: center;
 
-		.btnTheme {
-			padding: 10px;
+		.btn_theme {
+			width: 80px;
+			height: 40px;
 			margin: 20px;
-			border: 1px solid;
-			box-sizing: border-box;
+			border: none;
+			background-color: $color-bg-white;
+			border-radius: 50px;
+			padding: 5px 10px;
+			position: relative;
+			transition: 0.25s;
 			cursor: pointer;
-			font-weight: 700;
-			font-size: 1rem;
-			letter-spacing: 1.5px;
+
+			.btn_theme-circle {
+				width: 25px;
+				height: 25px;
+				background-color: $color-bg-dark;
+				border-radius: 50%;
+				position: absolute;
+				top: 50%;
+				left: calc(0% + 10px);
+				transform: translateY(-50%);
+				transition: 0.25s;
+			}
 		}
 	}
 
