@@ -9,10 +9,12 @@ export const ThemeContext = createContext(null);
 function App() {
 	// create useState hook to change light <-> dark
 	const [theme, setTheme] = useState("dark");
+	const [logoTheme, setLogoTheme] = useState("none");
 
 	const toggleTheme = () => {
 		// function setTheme dark <-> light from useState hook
 		setTheme((curr) => (curr === "light" ? "dark" : "light"));
+		setLogoTheme((curr) => (curr === "none" ? "invert" : "none"));
 	};
 
 	return (

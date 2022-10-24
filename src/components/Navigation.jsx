@@ -1,12 +1,13 @@
-import React from "react";
-import Logo from "../assets/Logo.svg";
+import { React } from "react";
+import { LogoIcon } from "./icons/LogoIcon";
 
 export const Navigation = () => {
 	return (
 		<>
 			<header>
 				<div className="nav_logo">
-					<img src={Logo} alt="TomDom" />
+					{/* <img src={Logo} alt="TomDom" /> */}
+					<LogoIcon />
 					<h2>TomDom</h2>
 				</div>
 				<nav>

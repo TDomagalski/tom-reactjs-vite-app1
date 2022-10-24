@@ -61,12 +61,12 @@ div {
   color: #f3ebf6;
   border: #f3ebf6;
 }
+.App#dark a {
+  color: #f3ebf6;
+}
 .App#dark .btnTheme {
   background-color: #f3ebf6;
   color: #242424;
-}
-.App#dark a {
-  color: #f3ebf6;
 }
 .App .App_optionbar {
   -webkit-box-sizing: border-box;
