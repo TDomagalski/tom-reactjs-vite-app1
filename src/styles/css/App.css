@@ -190,6 +190,10 @@ div {
           box-sizing: border-box;
   padding: 1rem;
 }
+.App .App_main #App_navigation header nav ul li a {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
 .App .App_main #App_content {
   display: -webkit-box;
   display: -ms-flexbox;

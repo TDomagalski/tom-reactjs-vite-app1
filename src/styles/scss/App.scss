@@ -60,18 +60,6 @@ div {
 		a {
 			color: $color-font-white;
 		}
-
-		// .btnTheme {
-		// 	background-color: $color-bg-white;
-		// 	color: $color-font-dark;
-		// }
-
-		// .btn_theme {
-		// 	background-color: $color-bg-white;
-		// 	.btn_theme-circle {
-		// 		background-color: $color-bg-dark;
-		// 	}
-		// }
 	}
 
 	.App_optionbar {
@@ -158,6 +146,10 @@ div {
 							flex-basis: 25%;
 							box-sizing: border-box;
 							padding: 1rem;
+
+							a {
+								transition: 0.25s;
+							}
 						}
 					}
 				}
