@@ -22,7 +22,7 @@ function App() {
 			<div className="App" id={theme}>
 				<div className="App_optionbar">
 					<button className="btn_theme" onClick={() => toggleTheme()}>
-						<div className="btn_theme-circle"></div>
+						<div className="btn_theme-circle" />
 					</button>
 					{/* <div className="btnTheme" onClick={() => toggleTheme()}>
 						<span>
